@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: f3-fitness-app
+    env: docker
+    repo: https://github.com/santhu587/F3FitnessApp
+    branch: main
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    autoDeploy: true
+
