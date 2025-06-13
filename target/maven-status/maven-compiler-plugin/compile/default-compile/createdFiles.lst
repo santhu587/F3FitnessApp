@@ -1,0 +1,6 @@
+com/f3fitness/controller/RegistrationController.class
+com/f3fitness/controller/RegistrationController$RegistrationResponse.class
+com/f3fitness/service/EmailService.class
+com/f3fitness/model/RegistrationRequest.class
+com/f3fitness/controller/WebController.class
+com/f3fitness/GymRegistrationApplication.class

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New Gym Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h2 {
+            color: #ff4d4d;
+            border-bottom: 2px solid #ff4d4d;
+            padding-bottom: 10px;
+        }
+        .info-row {
+            margin-bottom: 15px;
+        }
+        .label {
+            font-weight: bold;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>New Gym Registration</h2>
+        
+        <div class="info-row">
+            <span class="label">Full Name:</span>
+            <span th:text="${registration.fullName}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Email:</span>
+            <span th:text="${registration.email}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Phone:</span>
+            <span th:text="${registration.phone}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Age:</span>
+            <span th:text="${registration.age}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Gender:</span>
+            <span th:text="${registration.gender}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Membership Type:</span>
+            <span th:text="${registration.membershipType}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Fitness Goals:</span>
+            <span th:text="${registration.goals}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Medical Conditions:</span>
+            <span th:text="${registration.medicalConditions != null ? registration.medicalConditions : 'None'}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Preferred Time:</span>
+            <span th:text="${registration.preferredTime}"></span>
+        </div>
+        
+        <div class="info-row">
+            <span class="label">Additional Information:</span>
+            <span th:text="${registration.additionalInfo != null ? registration.additionalInfo : 'None'}"></span>
+        </div>
+    </div>
+</body>
+</html> 
